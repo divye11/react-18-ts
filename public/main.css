@@ -11,8 +11,10 @@ nav {
   padding: 20px;
 }
 
-.logo {
-  margin-left: 10px;
+.logo-link {
+  text-decoration: none;
+  margin-left: 0 0 0 10px;
+  color: black;
 }
 
 .sidebar {

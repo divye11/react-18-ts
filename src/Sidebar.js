@@ -19,20 +19,17 @@ const options = [
 
 export default function Sidebar() {
   return (
-    <>
-      <h1 className="logo">Desi Twitter</h1>
-      <ul className="options">
-        {options.map((option, i) => (
-          <li
-            key={i}
-            onClick={() => {
-              window.alert(`${option} clicked!`);
-            }}
-          >
-            {option}
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className="options">
+      {options.map((option, i) => (
+        <li
+          key={i}
+          onClick={() => {
+            window.alert(`${option} clicked!`);
+          }}
+        >
+          {option}
+        </li>
+      ))}
+    </ul>
   );
 }

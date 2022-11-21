@@ -9,7 +9,9 @@
 export default function NavBar() {
   return (
     <nav>
-      <a href="/">Home</a>
+      <a href="/" className="logo-link">
+        <h1 className="logo">Desi Twitter</h1>
+      </a>
     </nav>
   );
 }
