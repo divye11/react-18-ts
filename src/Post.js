@@ -8,21 +8,20 @@
 
 export default function Post() {
   return (
-    <>
-      <h1>Hello world</h1>
+    <div className="my-post">
+      <div>
+        <a href="#" className="author">
+          Dan Abramanov
+        </a>
+        <a href="#" className="author-handle">
+          @danab
+        </a>
+        <p className="datetime">1 month ago</p>
+      </div>
       <p>
-        This demo is <b>artificially slowed down</b>. Open{" "}
-        <code>server/delays.js</code> to adjust how much different things are
-        slowed down.
+        React 18 includes architectural improvements to React server-side
+        rendering (SSR) performance. Also React.lazy "just works" with SSR now!
       </p>
-      <p>
-        Notice how HTML for comments "streams in" before the JS (or React) has
-        loaded on the page.
-      </p>
-      <p>
-        Also notice that the JS for comments and sidebar has been code-split,
-        but HTML for it is still included in the server output.
-      </p>
-    </>
+    </div>
   );
 }

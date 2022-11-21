@@ -1,5 +1,6 @@
 body {
   font-family: system-ui, sans-serif;
+  background-color: #f8f8ff;
 }
 
 * {
@@ -10,17 +11,36 @@ nav {
   padding: 20px;
 }
 
+.logo {
+  margin-left: 10px;
+}
+
 .sidebar {
   padding: 10px;
   height: 500px;
   float: left;
   width: 30%;
 }
+.sidebar .options {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.sidebar .options li {
+  padding: 5px;
+  cursor: pointer;
+}
+.sidebar .options li:hover {
+  color: gray;
+}
 
 .post {
   padding: 20px;
   float: left;
-  width: 60%;
+  width: 50%;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 4px 15px rgba(23, 17, 105, 0.15);
 }
 
 h1,
@@ -33,8 +53,12 @@ li {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+  margin-right: 2px;
+}
+
 .post p {
-  font-size: larger;
   font-family: Georgia, serif;
 }
 
@@ -43,9 +67,40 @@ li {
 }
 
 .comment {
-  border: 2px solid #aaa;
+  border: 1px solid #d3d3d3;
   border-radius: 4px;
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-heading {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 14px;
+}
+
+.comment-info {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.author {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+  text-decoration: none;
+}
+.author:hover {
+  text-decoration: underline;
+}
+
+.author-handle {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.datetime {
+  margin-top: 2px;
 }
 
 /* https://codepen.io/mandelid/pen/vwKoe */

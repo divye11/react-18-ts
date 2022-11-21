@@ -30,13 +30,72 @@ function Comments() {
   var comments = Object(_data__WEBPACK_IMPORTED_MODULE_0__["useData"])();
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
     children: comments.map(function (comment, i) {
-      return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("p", {
+      return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
         className: "comment",
-        onClick: function onClick() {
-          window.alert("This is a comment");
-        },
-        children: comment
-      }, i, false, {
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
+          className: "comment-heading",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
+            className: "comment-info",
+            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("a", {
+              href: "#",
+              className: "author",
+              children: comment.user
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 19,
+              columnNumber: 15
+            }, _this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("p", {
+              className: "datetime",
+              children: comment.datetime
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 22,
+              columnNumber: 15
+            }, _this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 18,
+            columnNumber: 13
+          }, _this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 11
+        }, _this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
+          className: "comment-body",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("p", {
+            children: comment.comment
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 13
+          }, _this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("button", {
+            type: "button",
+            onClick: function onClick() {
+              window.alert("Replied to comment ".concat(i + 1, "!"));
+            },
+            children: "Reply"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 27,
+            columnNumber: 13
+          }, _this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("button", {
+            type: "button",
+            onClick: function onClick() {
+              window.alert("Comment ".concat(i + 1, " has been flagged!"));
+            },
+            children: "Flag"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 13
+          }, _this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 11
+        }, _this)]
+      }, i, true, {
         fileName: _jsxFileName,
         lineNumber: 16,
         columnNumber: 9
@@ -94,7 +153,19 @@ function DataProvider(_ref) {
 
 // In a real implementation the data would be streamed with the HTML.
 // We haven't integrated this part yet, so we'll just use fake data.
-var fakeData = ["Wait, it doesn't wait for React to load?", "How does this even work?", "I like marshmallows"];
+var fakeData = [{
+  user: "someguy14",
+  datetime: "1 hour ago",
+  comment: "Wait, it doesn't wait for React to load?"
+}, {
+  user: "thatgirl12",
+  datetime: "1 day ago",
+  comment: "How does this even work?"
+}, {
+  user: "thisguy345",
+  datetime: "2 days ago",
+  comment: "I like marshmallows"
+}];
 function useData() {
   var ctx = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(DataContext);
   if (ctx !== null) {

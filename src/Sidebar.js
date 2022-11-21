@@ -6,20 +6,32 @@
  *
  */
 
+const options = [
+  "Home",
+  "Explore",
+  "Notifications",
+  "Messages",
+  "Bookmarks",
+  "Lists",
+  "Profile",
+  "More",
+];
+
 export default function Sidebar() {
   return (
     <>
-      <h1>Archive</h1>
-      <ul>
-        <li>May 2021</li>
-        <li>April 2021</li>
-        <li>March 2021</li>
-        <li>February 2021</li>
-        <li>January 2021</li>
-        <li>December 2020</li>
-        <li>November 2020</li>
-        <li>October 2020</li>
-        <li>September 2020</li>
+      <h1 className="logo">Desi Twitter</h1>
+      <ul className="options">
+        {options.map((option, i) => (
+          <li
+            key={i}
+            onClick={() => {
+              window.alert(`${option} clicked!`);
+            }}
+          >
+            {option}
+          </li>
+        ))}
       </ul>
     </>
   );

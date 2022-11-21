@@ -13,15 +13,35 @@ export default function Comments() {
   return (
     <>
       {comments.map((comment, i) => (
-        <p
-          className="comment"
-          key={i}
-          onClick={() => {
-            window.alert("This is a comment");
-          }}
-        >
-          {comment}
-        </p>
+        <div className="comment" key={i}>
+          <div className="comment-heading">
+            <div className="comment-info">
+              <a href="#" className="author">
+                {comment.user}
+              </a>
+              <p className="datetime">{comment.datetime}</p>
+            </div>
+          </div>
+          <div className="comment-body">
+            <p>{comment.comment}</p>
+            <button
+              type="button"
+              onClick={() => {
+                window.alert(`Replied to comment ${i + 1}!`);
+              }}
+            >
+              Reply
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                window.alert(`Comment ${i + 1} has been flagged!`);
+              }}
+            >
+              Flag
+            </button>
+          </div>
+        </div>
       ))}
     </>
   );

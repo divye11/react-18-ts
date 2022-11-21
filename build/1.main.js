@@ -14,7 +14,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
 var _jsxFileName = "/Users/anandtangri/Velotio/Learn/suspense-ts/src/Post.js";
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -24,45 +23,49 @@ var _jsxFileName = "/Users/anandtangri/Velotio/Learn/suspense-ts/src/Post.js";
  */
 
 function Post() {
-  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h1", {
-      children: "Hello world"
-    }, void 0, false, {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "my-post",
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("a", {
+        href: "#",
+        className: "author",
+        children: "Dan Abramanov"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 9
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("a", {
+        href: "#",
+        className: "author-handle",
+        children: "@danab"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 9
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+        className: "datetime",
+        children: "1 month ago"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
       fileName: _jsxFileName,
       lineNumber: 12,
       columnNumber: 7
     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
-      children: ["This demo is ", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("b", {
-        children: "artificially slowed down"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 22
-      }, this), ". Open", " ", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("code", {
-        children: "server/delays.js"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 9
-      }, this), " to adjust how much different things are slowed down."]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
-      children: "Notice how HTML for comments \"streams in\" before the JS (or React) has loaded on the page."
+      children: "React 18 includes architectural improvements to React server-side rendering (SSR) performance. Also React.lazy \"just works\" with SSR now!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 7
-    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
-      children: "Also notice that the JS for comments and sidebar has been code-split, but HTML for it is still included in the server output."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 21,
       columnNumber: 7
     }, this)]
-  }, void 0, true);
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 11,
+    columnNumber: 5
+  }, this);
 }
 
 /***/ })

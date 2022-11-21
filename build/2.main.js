@@ -23,73 +23,34 @@ var _jsxFileName = "/Users/anandtangri/Velotio/Learn/suspense-ts/src/Sidebar.js"
  *
  */
 
+var options = ["Home", "Explore", "Notifications", "Messages", "Bookmarks", "Lists", "Profile", "More"];
 function Sidebar() {
+  var _this = this;
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h1", {
-      children: "Archive"
+      className: "logo",
+      children: "Desi Twitter"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 23,
       columnNumber: 7
     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("ul", {
-      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "May 2021"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "April 2021"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "March 2021"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 16,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "February 2021"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "January 2021"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "December 2020"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "November 2020"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "October 2020"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
-        children: "September 2020"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
+      className: "options",
+      children: options.map(function (option, i) {
+        return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          onClick: function onClick() {
+            window.alert("".concat(option, " clicked!"));
+          },
+          children: option
+        }, i, false, {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 11
+        }, _this);
+      })
+    }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 24,
       columnNumber: 7
     }, this)]
   }, void 0, true);

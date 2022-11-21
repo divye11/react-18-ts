@@ -22,9 +22,21 @@ export function DataProvider({ children, data }) {
 // In a real implementation the data would be streamed with the HTML.
 // We haven't integrated this part yet, so we'll just use fake data.
 const fakeData = [
-  "Wait, it doesn't wait for React to load?",
-  "How does this even work?",
-  "I like marshmallows",
+  {
+    user: "someguy14",
+    datetime: "1 hour ago",
+    comment: "Wait, it doesn't wait for React to load?",
+  },
+  {
+    user: "thatgirl12",
+    datetime: "1 day ago",
+    comment: "How does this even work?",
+  },
+  {
+    user: "thisguy345",
+    datetime: "2 days ago",
+    comment: "I like marshmallows",
+  },
 ];
 
 export function useData() {
