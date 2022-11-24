@@ -48,7 +48,6 @@ function Content() {
             <Comments />
           </Suspense>
         </section>
-        <h2>Thanks for reading!</h2>
       </article>
     </Layout>
   );
