@@ -12,7 +12,7 @@ export default function Comments() {
   const comments = useData();
   return (
     <>
-      {comments.map((comment, i) => (
+      {comments?.map((comment, i) => (
         <div className="comment" key={i}>
           <div className="comment-heading">
             <div className="comment-info">
